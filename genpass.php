@@ -8,10 +8,10 @@
          $accepted = 'qazxswedcvfrtgbnhyujmkiolp1234567890QAZXSWEDCVFRTGBNHYUJMKIOLP+-()*!.,';
         // srand(((int)((double)microtime()*10000000))); // меняем начальное число генератора случайных чисел
 	for($z=0; $z<10; $z++) {
-	    for ($i=0; $i<=$count_ch1; $i++) { //формируем случайный символ для каждой составляющей пароля 
-	    $random = rand(0, (strlen($accepted) -1)); // берем случайный индекс из строки $accepted 
-	    $pass .= $accepted[$random]; // дописываем в конец генерируемого пароля полученный символ 
-	        } 
+	    for ($i=0; $i<=$count_ch1; $i++) { //формируем случайный символ для каждой составляющей пароля
+	    $random = rand(0, (strlen($accepted) -1)); // берем случайный индекс из строки $accepted
+	    $pass .= $accepted[$random]; // дописываем в конец генерируемого пароля полученный символ
+	        }
 	echo " <font face=verdana color=red size=4><b>".$pass."</b></font>"; // выводим на экран
 	echo "<br />";
 	$pass = '';
@@ -29,10 +29,10 @@
          $accepted = 'qazxswedcvfrtgbnhyujmkiolp1234567890QAZXSWEDCVFRTGBNHYUJMKIOLP+-()*!.,';
         // srand(((int)((double)microtime()*10000000))); // меняем начальное число генератора случайных чисел
 	for($z=0; $z<10; $z++) {
-	    for ($i=0; $i<=$count_ch1; $i++) { //формируем случайный символ для каждой составляющей пароля 
-	    $random = rand(0, (strlen($accepted) -1)); // берем случайный индекс из строки $accepted 
-	    $pass .= $accepted[$random]; // дописываем в конец генерируемого пароля полученный символ 
-	        } 
+	    for ($i=0; $i<=$count_ch1; $i++) { //формируем случайный символ для каждой составляющей пароля
+	    $random = rand(0, (strlen($accepted) -1)); // берем случайный индекс из строки $accepted
+	    $pass .= $accepted[$random]; // дописываем в конец генерируемого пароля полученный символ
+	        }
 	echo " <font face=verdana color=red size=4><b>".$pass."</b></font>"; // выводим на экран
 	echo "<br />";
 	$masivPass [] = $pass;//добавляем пароль в масив
@@ -48,7 +48,6 @@
 	echo "END";
 ?>
 
-
 <table cellpadding="5" cellspacing="0" border="1">
     <?php foreach ($masivPass as $value) { ?>
 <tr>
@@ -60,6 +59,5 @@
 		<?php } ?>
 </table>
     <?php
-	//upset($masivPass); //clear masiv
+	upset($masivPass); //clear masiv
     ?>
-
