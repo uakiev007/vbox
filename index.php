@@ -6,7 +6,7 @@
     </head>
     <body>
          <p> It works! </p>
-	    <a href="test.php">Генерация пароля, тест</a>
+	    <a href="genpass.php">Генерация пароля, тест</a>
 
     </body>
 </html>
